@@ -51,11 +51,26 @@ const MOG = () => {
   return (
     <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Section Header - Shows first on mobile */}
+        <div className="lg:hidden mb-12">
+          <div className="text-center lg:text-left">
+            <span className="inline-block bg-emerald-100 text-emerald-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+              Our Foundation
+            </span>
+
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              The Man of <span className="text-emerald-600">God</span>
+            </h2>
+
+            <div className="w-20 h-1 bg-emerald-500 rounded-full mx-auto lg:mx-0"></div>
+          </div>
+        </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left Section - Image Carousel */}
-          <div className="relative">
+          <div className="relative order-2 lg:order-1">
             {/* Main Image Display */}
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl h-[600px]">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl h-[400px] md:h-[600px]">
               <AnimatePresence mode="wait">
                 <motion.img
                   key={currentImageIndex}
@@ -145,9 +160,9 @@ const MOG = () => {
           </div>
 
           {/* Right Section - Text Content */}
-          <div className="space-y-8">
-            {/* Section Header */}
-            <div>
+          <div className="space-y-8 order-1 lg:order-2">
+            {/* Section Header - Hidden on mobile, shown on desktop */}
+            <div className="hidden lg:block">
               <span className="inline-block bg-emerald-100 text-emerald-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">
                 Our Foundation
               </span>
@@ -212,7 +227,7 @@ const MOG = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5 }}
-                className="text-center"
+                className="text-center lg:text-left"
               >
                 <p className="text-2xl md:text-3xl font-light text-gray-800 italic mb-4">
                   "I love you all"
