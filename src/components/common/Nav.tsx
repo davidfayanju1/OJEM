@@ -15,11 +15,11 @@ const Nav = () => {
 
   const navItems: NavItem[] = [
     { label: "Home", href: "/" },
-    { label: "About", href: "/about" },
-    { label: "Ministries", href: "/ministries" },
-    { label: "Events", href: "/events" },
-    { label: "Sermons", href: "/sermons" },
-    { label: "Contact", href: "/contact" },
+    { label: "About", href: "/" },
+    { label: "Ministries", href: "/" },
+    { label: "Events", href: "/" },
+    { label: "Sermons", href: "/" },
+    { label: "Contact", href: "/" },
   ];
 
   useEffect(() => {

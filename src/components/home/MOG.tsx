@@ -49,7 +49,7 @@ const MOG = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
+    <section className="py-20 bg-linear-to-br from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header - Shows first on mobile */}
         <div className="lg:hidden mb-12">
@@ -85,7 +85,7 @@ const MOG = () => {
               </AnimatePresence>
 
               {/* Gradient Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-gray-900/30 via-transparent to-transparent"></div>
+              <div className="absolute inset-0 bg-linear-to-t from-gray-900/30 via-transparent to-transparent"></div>
 
               {/* Navigation Arrows */}
               <button

@@ -251,7 +251,7 @@ const Hero = () => {
                 onClick={() => goToSlide(index)}
                 className={`w-2 h-2 rounded-full transition-all ${
                   index === currentSlide
-                    ? "bg-amber-400 scale-125"
+                    ? "bg-green-400 scale-125"
                     : "bg-gray-400 hover:bg-gray-200"
                 }`}
                 aria-label={`Go to slide ${index + 1}`}
@@ -277,7 +277,7 @@ const Hero = () => {
                 cy="16"
                 r="14"
                 fill="none"
-                stroke="#F59E0B"
+                stroke="#0f8e4b"
                 strokeWidth="2"
                 strokeDasharray="88"
                 strokeDashoffset="88"
@@ -324,7 +324,7 @@ const Hero = () => {
 
         {/* Service times overlay */}
         <div className="absolute top-8 left-8 z-20 bg-black/30 backdrop-blur-sm rounded-lg p-4 border border-white/20">
-          <h3 className="text-amber-400 font-semibold text-lg mb-2">
+          <h3 className="text-green-400 font-semibold text-lg mb-2">
             Service Times
           </h3>
           <div className="text-white text-sm space-y-1">
@@ -333,12 +333,12 @@ const Hero = () => {
               <span>7:00 AM & 10:00 AM</span>
             </div>
             <div className="flex justify-between gap-4">
-              <span>Wednesday:</span>
+              <span>Tuesday:</span>
               <span>5:30 PM</span>
             </div>
             <div className="flex justify-between gap-4">
-              <span>Friday:</span>
-              <span>10:00 PM</span>
+              <span>Thursday:</span>
+              <span>10:00 AM</span>
             </div>
           </div>
         </div>

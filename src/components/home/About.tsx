@@ -5,11 +5,11 @@ const About = () => {
   const branches = [
     {
       name: "OJEM Headquarters",
-      location: "Molete, Ibadan",
-      address: "123 Salvation Street, Molete",
+      location: "Bembo, Ibadan",
+      address:
+        "22, Benbo, Taiwo street off poly road, Sango, ibadan, Oyo State",
       serviceTimes: ["Sunday: 7:00 AM & 10:00 AM", "Wednesday: 5:30 PM"],
-      image:
-        "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=600&h=700&fit=crop",
+      image: "/images/outsidechurch.jpg",
     },
     {
       name: "OJEM Dugbe Branch",
@@ -64,10 +64,10 @@ const About = () => {
                 />
 
                 {/* Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/20 to-transparent"></div>
+                <div className="absolute inset-0 bg-linear-to-t from-gray-900/90 via-gray-900/20 to-transparent"></div>
 
                 {/* Additional Gradient for Depth */}
-                <div className="absolute inset-0 bg-gradient-to-br from-emerald-900/10 to-transparent"></div>
+                <div className="absolute inset-0 bg-linear-to-br from-emerald-900/10 to-transparent"></div>
               </div>
 
               {/* Content Container */}
